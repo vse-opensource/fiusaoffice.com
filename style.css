@@ -1,0 +1,115 @@
+/* .....................................
+
+ui / navigation
+
+..................................... */
+.logo{
+    padding: 30px;
+    position: fixed;
+    background-color: white;
+    border-bottom-right-radius: 10px;
+}
+.nav{
+    right: 0;
+    top: 0px;
+    position: fixed;
+    padding-right: 40px;
+    padding-top: 20px;
+}
+.nav button{
+    background-color: var(--color5);
+    color: var(--color4);
+    padding: 20px;
+    font-size: 30px;
+    -webkit-transition: background .5s ease-out;
+    -moz-transition: background .5s ease-out;
+    -o-transition: background .5s ease-out;
+    transition: background .5s ease-out;
+    border: 0;
+    cursor: pointer;
+}
+.nav button:hover{
+    background-color: var(--color5);
+    color: var(--color1);
+}
+@media (orientation: portrait){
+    .logo{
+        padding: 10px;
+        width: 120px;
+    }
+    .nav{
+        right: 0;
+        top: 0px;
+        position: fixed;
+        padding-right: 0px;
+        padding-top: 0px;
+    }
+}
+
+/* .....................................
+
+ui / navigation content
+
+..................................... */
+.nav-menu{
+    width: 0px;
+    height: 100vh;
+    background-color: var(--color5);
+    position: fixed;
+    z-index: 99;
+}
+.nav-menu-close{
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    font-size: 60px;
+}
+.nav-menu-close a{
+    color: aliceblue;
+    -webkit-transition: color .5s ease-out;
+    -moz-transition: color .5s ease-out;
+    -o-transition: color .5s ease-out;
+    transition: color .5s ease-out;
+}
+.nav-menu-close a:hover{
+    color: var(--color1);
+}
+.nav-menu-content{
+    padding: 50px;
+    width: 450px;
+    display: none;
+}
+@media (orientation: portrait){
+
+}
+
+.grid-cover{
+    display: grid;
+    grid-template-columns: 40% auto;
+}
+.about{
+    padding-top: 110px;
+    padding-left: 60px;
+    padding-right: 90px
+}
+.about hr{
+    border-bottom: 1px dotted #ccc;
+    background: transparent;
+}
+.vantagens{
+    list-style: circle;
+}
+.vantagens li{
+    padding-bottom: 10px;
+}
+@media (orientation: portrait){
+    .grid-cover{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .about{
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px
+    }
+}

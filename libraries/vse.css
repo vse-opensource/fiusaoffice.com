@@ -1,0 +1,64 @@
+/* .....................................
+
+font
+
+..................................... */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;600;700;800&display=swap');
+body{
+    font-family: 'Outfit', sans-serif !important;
+}
+
+/* .....................................
+
+colors
+
+..................................... */
+:root {
+    --color1: #cccccc;
+    --color2: #000000;
+    --color3: #3a3a3a;
+    --color4: #ffffff;
+    --color5: #af312b;
+    --color6: #b0605c;
+}
+::selection {      background: cyan; }
+::-moz-selection { background: cyan; }
+
+.color1{ color: var(--color1) !important; }
+.color2{ color: var(--color2) !important; }
+.color3{ color: var(--color3) !important; }
+.color4{ color: var(--color4) !important; }
+.color5{ color: var(--color5) !important; }
+.color6{ color: var(--color6) !important; }
+
+.color1-bg{ background-color: var(--color1) !important; }
+.color2-bg{ background-color: var(--color2) !important; }
+.color3-bg{ background-color: var(--color3) !important; }
+.color4-bg{ background-color: var(--color4) !important; }
+.color5-bg{ background-color: var(--color5) !important; }
+.color6-bg{ background-color: var(--color6) !important; }
+
+/* .....................................
+
+shortcuts
+
+..................................... */
+.digitalfont{
+    font-size: 10px;
+    font-weight: 500 !important;
+    font-family: 'Poppins', sans-serif !important;
+    letter-spacing: 3px !important;
+    text-transform: uppercase;
+}
+.clear10x{ height: 10px !important; }
+.clear20x{ height: 20px !important; }
+.clear30x{ height: 30px !important; }
+.clear50x{ height: 50px !important; }
+.clear100x{ height: 100px !important; }
+.fine{ font-weight: 100 !important; }
+.justify{ text-align: justify !important; }
+.super{
+    font-size: 60px !important;
+    letter-spacing: 10px;
+}

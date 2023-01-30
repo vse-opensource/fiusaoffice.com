@@ -1,1 +1,90 @@
-<h1>SITE EM DESENVOLVIMENTO</h1>
+<html>
+    <head>
+        <title>Fiusa Office</title>
+        <!-- meta -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="icon" href="content/favicon.png">
+
+        <!-- libraries -->
+        <link rel="stylesheet" href="libraries/bulma.min.css">
+        <link rel="stylesheet" href="libraries/icons.css">
+        <link rel="stylesheet" href="libraries/vse.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <!-- ui -->
+        <div class="logo">
+            <img src="content/logo.png">
+        </div>
+        <div class="nav-menu">
+            <div class="nav-menu-close">
+                <a onclick="closeMenu()">
+                    <i class="ph-x-square-thin"></i>
+                </a>
+            </div>
+
+            <div class="nav-menu-content">
+                <p class="color4">Em breve mais conteúdo...</p>
+            </div>
+        </div>
+
+        <div class="nav">
+            <button onclick="openMenu()">
+                <i class="ph-list"></i>
+            </button>
+        </div>
+
+
+        <section class="grid-cover">
+            <div>
+                <img src="content/fiusaoffice.jpg">
+            </div>
+
+            <div class="about">
+                <h1 class="title is-1"><span class="color5">Tenha um escritório</span> na melhor localização de Ribeirão Preto</h1>
+                <h1 class="subtitle is-3">De forma rápida e segura</h1>
+                <p>
+                    O coworking é um espaço de trabalho compartilhado onde você pode ter acesso a uma mesa, Wi-Fi, cozinha e portaria. Você também pode utilizar uma incrível sala de reuniões com outros profissionais.
+                </p>
+
+                <hr>
+
+                <div class="columns">
+                    <div class="column">
+                        <h1 class="title is-4">Aquisição</h1>
+                        Trabalhamos com diversos planos. Se você está interessado em conhecer nosso Coworking, baixe nossa apresentação comercial
+                        <div class="clear20x"></div>
+                        <a class="button is-rounded color5-bg color4" href="content/tabela2023.pdf" target="_blank">Baixar apresentação comercial</a>
+                    </div>
+
+                    <div class="column">
+                        <h1 class="title is-4">Vantagens</h1>
+                        <ul class="vantagens">
+                            <li>
+                                Acesso a um ambiente de trabalho inspirador e propício para o networking 
+                            </li>
+
+                            <li>
+                                Espaço compartilhado com diversos serviços incluídos, como internet, limpeza, café
+                            </li>
+
+                            <li>
+                                Utilize por tempo determinado ou indefinido
+                            </li>
+                            
+                            <li>
+                                Acesso a infraestrutura de ponta
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script type="text/javascript" src="libraries/jquery.min.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+    </body>
+</html>
