@@ -16,7 +16,6 @@ ui / navigation
     position: fixed;
     padding-right: 20px;
     padding-top: 20px;
-    display: none;
 }
 .nav button{
     background-color: var(--color5);
