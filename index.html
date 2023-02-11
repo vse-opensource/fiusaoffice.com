@@ -12,6 +12,10 @@
         <link rel="stylesheet" href="vse/icons.css">
         <link rel="stylesheet" href="vse/vse.css">
         <link rel="stylesheet" href="style.css">
+
+        <!-- swiper -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     </head>
 
     <body>
@@ -41,7 +45,7 @@
                 <div class="nav-menu-content-div"></div>
 
                 <a onclick="navMenu3();">
-                    <h1 class="title is-3">Planos</h1>
+                    <h1 class="title is-3">Serviços</h1>
                 </a>
                 <div class="nav-menu-content-div"></div>
 
@@ -53,13 +57,11 @@
                 <a class="button is-rounded agendar">Agendar Visita</a>
             </div>
         </div>
-
         <div class="nav">
             <button onclick="openMenu()">
                 <i class="ph-list"></i>
             </button>
         </div>
-
 
         <!-- cover -->
         <section class="grid-cover" id="inicio">
@@ -68,7 +70,7 @@
             </div>
 
             <div class="about">
-                <h1 class="title is-1"><span class="color5">Tenha um escritório</span> na melhor localização de Ribeirão Preto</h1>
+                <h1 class="title is-1"><span class="color5">O seu escritório</span> na melhor localização de Ribeirão Preto</h1>
                 <h1 class="subtitle is-3">De forma rápida e segura</h1>
                 <p>
                     O coworking é um espaço de trabalho compartilhado onde você pode ter acesso a uma mesa, Wi-Fi, cozinha e portaria. Você também pode utilizar uma incrível sala de reuniões com outros profissionais.
@@ -81,9 +83,10 @@
                         <h1 class="title is-4">Aquisição</h1>
                         Trabalhamos com diversos planos. Se você está interessado em conhecer nosso Coworking, baixe nossa apresentação comercial
                         <div class="clear20x"></div>
-                        <a class="button is-rounded color5-bg color4" href="content/tabela2023.pdf" target="_blank">Baixar apresentação comercial</a>
+                        <a class="button is-rounded color5-bg color4" onclick="navMenu3()">
+                            Conheça nossos serviços
+                        </a>
                     </div>
-
                     <div class="column">
                         <h1 class="title is-4">Vantagens</h1>
                         <ul class="vantagens">
@@ -108,9 +111,265 @@
             </div>
         </section>
 
-        <!-- planos -->
-        <section class="planos">
+        <!-- sobre -->
+        <!--<section id="sobre">
 
+        </section>-->
+
+        <!-- serviços -->
+        <!--<section id="servicos">
+            <div class="has-text-centered">
+                <div class="icon">
+                    <i class="ph-scroll-thin"></i>
+                </div>
+                <h1 class="title is-1 color4">Serviços</h1>
+                <div class="clear20x"></div>
+            </div>
+
+            <div class="columns">
+                <div class="column">
+                    <h1 class="title is-4 color4">Fiusa Office </h1>
+                    <h1 class="subtitle is-5 color6">Mensal</h1>
+                    <hr>
+
+                    <ul>
+                        <li>Um escritório exclusivo na melhor localização
+                            <br>de Ribeirão Preto</li>
+                        <li>Período Integral, 7 dias por semana</li>
+                        <li>Portaria 24Horas</li>
+                        <li>Internet WIFI de alta velocidade</li>
+                    </ul>
+
+                    <hr>
+                    <div class="clear10x"></div>
+                    <div class="valor">R$ 595</div>
+                </div>
+
+                <div class="column">
+                    <h1 class="title is-4 color4">Fiusa Office</h1>
+                    <h1 class="subtitle is-5 color6">Diária</h1>
+                    <hr>
+
+                    <ul>
+                        <li>Um escritório exclusivo na melhor localização
+                            <br>de Ribeirão Preto</li>
+                        <li>Segunda à sexta, 08h00 às 20h00</li>
+                        <li>Internet WIFI de alta velocidade</li>
+                        <li style="height: 35px" class="none"></li>
+                    </ul>
+
+                    <hr>
+                    <div class="clear10x"></div>
+                    <div class="valor">R$ 125</div>
+                </div>
+
+                <div class="column">
+                    <h1 class="title is-4 color4">Escritório Virtual</h1>
+                    <h1 class="subtitle is-5 color6">Trimestral</h1>
+                    <hr>
+                    <ul>
+                        <li>Um escritório exclusivo na melhor localização
+                            <br>de Ribeirão Preto</li>
+                        <li>Segunda à sexta, 08h00 às 20h00</li>
+                        <li>Internet WIFI de alta velocidade</li>
+                        <li style="height: 36px" class="none"></li>
+                    </ul>
+
+                    <hr>
+                    <div class="clear10x"></div>
+                    <div class="valor">R$ 1575,00</div>
+                </div>
+            </div>
+
+            <div class="clear50x"></div>
+
+            <div class="columns">
+                <div class="column">
+                    <h1 class="title is-4 color4">Endereço Comercial</h1>
+                    <h1 class="subtitle is-5 color6">Trimestral</h1>
+                    <hr>
+                    <ul>
+                        <li>Um escritório exclusivo na melhor localização
+                            <br>de Ribeirão Preto</li>
+                        <li>Período Integral, 7 dias por semana</li>
+                        <li>Portaria 24Horas</li>
+                        <li>Internet WIFI de alta velocidade</li>
+                    </ul>
+
+                    <div class="clear30x"></div>
+                    <div class="valor">R$ 595</div>
+                </div>
+
+                <div class="column">
+                    <h1 class="title is-4 color4">Telefonia Personalizada</h1>
+                    <h1 class="subtitle is-5 color6">Trimestral</h1>
+                    <hr>
+                    <ul>
+                        <li>Um escritório exclusivo na melhor localização
+                            <br>de Ribeirão Preto</li>
+                        <li>Segunda à sexta, 08h00 às 20h00</li>
+                        <li>Internet WIFI de alta velocidade</li>
+                        <li style="height: 35px" class="none"></li>
+                    </ul>
+
+                    <div class="clear30x"></div>
+                    <div class="valor">R$ 125</div>
+                </div>
+
+                <div class="column">
+                    <h1 class="title is-4 color4">Sala de Treinamentos</h1>
+                    <h1 class="subtitle is-5 color6">Trimestral</h1>
+                    <hr>
+                    <ul>
+                        <li>Um escritório exclusivo na melhor localização
+                            <br>de Ribeirão Preto</li>
+                        <li>Segunda à sexta, 08h00 às 20h00</li>
+                        <li>Internet WIFI de alta velocidade</li>
+                        <li style="height: 36px" class="none"></li>
+                    </ul>
+
+                    <div class="clear30x"></div>
+                    <div class="valor">R$ 675</div>
+                </div>
+            </div>
+
+            <div class="clear50x"></div>
+
+            <div class="columns">
+                <div class="column">
+                    <h1 class="title is-4 color4">Endereço Comercial</h1>
+                    <h1 class="subtitle is-5 color6">Trimestral</h1>
+                    <hr>
+                    <ul>
+                        <li>Um escritório exclusivo na melhor localização
+                            <br>de Ribeirão Preto</li>
+                        <li>Período Integral, 7 dias por semana</li>
+                        <li>Portaria 24Horas</li>
+                        <li>Internet WIFI de alta velocidade</li>
+                    </ul>
+
+                    <div class="clear30x"></div>
+                    <div class="valor">R$ 595</div>
+                </div>
+
+                <div class="column">
+                    <h1 class="title is-4 color4">Telefonia Personalizada</h1>
+                    <h1 class="subtitle is-5 color6">Trimestral</h1>
+                    <hr>
+                    <ul>
+                        <li>Um escritório exclusivo na melhor localização
+                            <br>de Ribeirão Preto</li>
+                        <li>Segunda à sexta, 08h00 às 20h00</li>
+                        <li>Internet WIFI de alta velocidade</li>
+                        <li style="height: 35px" class="none"></li>
+                    </ul>
+
+                    <div class="clear30x"></div>
+                    <div class="valor">R$ 125</div>
+                </div>
+
+                <div class="column">
+                    <h1 class="title is-4 color4">Sala de Treinamentos</h1>
+                    <h1 class="subtitle is-5 color6">Trimestral</h1>
+                    <hr>
+                    <ul>
+                        <li>Um escritório exclusivo na melhor localização
+                            <br>de Ribeirão Preto</li>
+                        <li>Segunda à sexta, 08h00 às 20h00</li>
+                        <li>Internet WIFI de alta velocidade</li>
+                        <li style="height: 36px" class="none"></li>
+                    </ul>
+
+                    <div class="clear30x"></div>
+                    <div class="valor">R$ 675</div>
+                </div>
+            </div>
+        </section>-->
+        
+        <!--<section class="sala-de-reuniao">
+            <div class="columns">
+
+                <div class="column">
+                    <div class="sala-de-reuniao-head">
+                        <h1 class="title is-2 color4 fine">Sala de Reuniões</h1>
+
+                        <div class="columns">
+                            <div class="column">
+                                <h1 class="subtitle is-5 color4">Pacote Semanal</h1>
+                                <hr>
+                                <ul>
+                                    <li>
+                                        Período integral, 5 dias<br>(seg. à sexta)
+                                    </li>
+                                </ul>
+
+                                <div class="clear30x"></div>
+                                <div class="valor">R$ 595</div>
+                            </div>
+
+                            <div class="column">
+                                <h1 class="subtitle is-5 color4">Pacote Avulso</h1>
+                                <hr>
+                                <ul>
+                                    <li>
+                                        Período integral, 5 dias<br>(seg. à sexta)
+                                    </li>
+                                </ul>
+
+                                <div class="clear30x"></div>
+                                <div class="valor">R$ 595</div>
+                            </div>
+
+                            <div class="column">
+                                <h1 class="subtitle is-5 color4">Pacote por Período</h1>
+                                <hr>
+                                <ul>
+                                    <li>
+                                        Período integral, 5 dias<br>(seg. à sexta)
+                                    </li>
+                                </ul>
+
+                                <div class="clear30x"></div>
+                                <div class="valor">R$ 595</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="column is-5">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="content/sala-de-reuniao.jpg"></div>
+                            <div class="swiper-slide"><img src="content/sala-de-reuniao.jpg"></div>
+                            <div class="swiper-slide"><img src="content/sala-de-reuniao.jpg"></div>
+                        </div>
+
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clear30x"></div>
+        </section>-->
+        <section class="release">
+            <h1 class="title is-2 color6">Precisa de informações mais detalhadas?</h1>
+            <a class="button is-rounded color5-bg color4" href="content/tabela2023.pdf" target="_blank">Baixar apresentação comercial</a>
+        </section>
+
+        <!-- agendar -->
+        <section id="agendar">
+            <div class="has-text-centered">
+                <div class="icon">
+                    <i class="ph-calendar-check-thin"></i>
+                </div>
+                <h1 class="title is-1 color5">Agende agora mesmo uma visita</h1>
+                <h1 class="subtitle is-4 color5">Preencha seus dados que entraremos em contato</h1>
+                <div class="clear20x"></div>
+
+                Estamos em manutenção. Por favor entrar em contato no <a class="tag is-success" href="https://wa.me/5516996372883">WHATSAPP</a>
+            </div>
         </section>
 
         <!-- gmaps -->
@@ -149,7 +408,7 @@
             </div>
 
             <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.5189377928414!2d-47.80743118560316!3d-21.21126098489956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9b92a49024a77%3A0xe3707aa0a1756e54!2sCondominio%20Complexo%20Empresarial%20Fiusa%20center!5e0!3m2!1sen!2sbr!4v1675182135143!5m2!1sen!2sbr" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.5189377928414!2d-47.80743118560316!3d-21.21126098489956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9b92a49024a77%3A0xe3707aa0a1756e54!2sCondominio%20Complexo%20Empresarial%20Fiusa%20center!5e0!3m2!1sen!2sbr!4v1675182135143!5m2!1sen!2sbr" width="100%" height="580" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
         </section>
@@ -158,5 +417,18 @@
         <script type="text/javascript" src="vse/jquery.min.js"></script>
         <script type="text/javascript" src="vse/vse.js"></script>
         <script type="text/javascript" src="app.js"></script>
+        <script type="text/javascript">
+            const swiper = new Swiper('.swiper', {
+                // Optional parameters
+                direction: 'horizontal',
+                loop: true,
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
     </body>
 </html>

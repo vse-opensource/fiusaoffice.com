@@ -10,6 +10,6 @@ function closeMenu(){
 
 function navMenu1(){ closeMenu(); scrollTo("#inicio"); }
 function navMenu2(){ closeMenu(); scrollTo("#sobre"); }
-function navMenu3(){ closeMenu(); scrollTo("#planos"); }
+function navMenu3(){ closeMenu(); scrollTo("#servicos"); }
 function navMenu4(){ closeMenu(); scrollTo("#endereco"); }
 function agendar(){  closeMenu(); scrollTo("#agendar"); }
